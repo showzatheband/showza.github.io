@@ -105,13 +105,13 @@ body {
   transition: opacity 2.0s ease-in-out 0.0s;
 }
 .gallery li:nth-child(1) {
-  background-image: url("https://github.com/showzadomain/showzatheband.github.io/blob/master/assets/images/bg_1.JPG?raw=true");
+  background-image: url("https://github.com/showzatheband/showzatheband.github.io/blob/master/assets/images/bg_1.JPG?raw=true");
 }
 .gallery li:nth-child(2) {
-  background-image: url("https://github.com/showzadomain/showzatheband.github.io/blob/master/assets/images/bg_2.JPG?raw=true");
+  background-image: url("https://github.com/showzatheband/showzatheband.github.io/blob/master/assets/images/bg_2.JPG?raw=true");
 }
 .gallery li:nth-child(3) {
-  background-image: url("https://github.com/showzadomain/showzatheband.github.io/blob/master/assets/images/bg_3.jpg?raw=true");
+  background-image: url("https://github.com/showzatheband/showzatheband.github.io/blob/master/assets/images/bg_3.jpg?raw=true");
 }
 [data-background="1"] .gallery li:nth-child(1),
 [data-background="2"] .gallery li:nth-child(2),
