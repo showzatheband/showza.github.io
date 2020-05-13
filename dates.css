@@ -54,7 +54,6 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  
   color: white;
   font-weight: bold;
   font-style: normal;
@@ -103,17 +102,17 @@ body {
   font-weight: 200;
 }
 .title {
-    margin: 0;
-    font-size: 45px;
-    color: #fff;
-    
+  margin: 0;
+  text-align: center;
+  font-size: 45px;
+  color: #fff;
 }
-ul {
+.ul2 {
   list-style-type: none;
   margin: 0;
   padding: 0;
   height: 39px;
-  background-color: transparent;
+  background-color: orange;
 }
 .liLeft {
   float: left;
@@ -137,9 +136,10 @@ ul {
     font-weight: 400;
 }
 .divider {
-    width: 50%;
+    width: 100%;
     height: 2px;
     border-radius: 10px;
+    float: center;
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: #fff;
