@@ -1,6 +1,6 @@
 body {
-  height: 100vh;
-  margin: 0;
+    height: 100vh;
+    margin: 0;
 }
 body {
   font-family: Helvetica;
@@ -77,8 +77,8 @@ body {
     border-radius: 100px;
 }
 .topnav a.active {
-    background-color: #4CAF50;
-    color: white;
+  background-color: #4CAF50;
+  color: white;
 }
 .gallery {
   position: fixed;
