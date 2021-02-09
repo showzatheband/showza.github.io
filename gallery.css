@@ -203,5 +203,10 @@ body {
       .topnav[data-state="closed"] ul {
         display: none;
       }
+      
+      .img{
+          border-radius: 10px;
+          width: 95%;
+        }
   }
   
