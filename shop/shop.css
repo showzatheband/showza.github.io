@@ -17,6 +17,9 @@ body {
 .imgContainer {
   padding: 25px;
 }
+.shopbox {
+  width: 100%;
+}
 .img{
   border-radius: 10px;
 }
@@ -91,6 +94,22 @@ body {
       color: white;
   }
   .contentContainer {
+      position: relative;
+      top: 155px;
+      margin: 0 auto;
+      bottom:0;
+      width: 90%;
+      height: 76.5%;
+      padding: 5px;
+      border-color: #97E6D1;
+      border-width: 5px;
+      border-radius: 20px;
+      border-style: solid;
+      overflow-y: scroll;
+      background-color: rgba(0,0,0,0.65);
+  }
+}
+  .shopContainer {
       position: relative;
       top: 155px;
       margin: 0 auto;
