@@ -16,9 +16,8 @@
       </ul>
     </menu>
     <div class="navBox"></div>
-    <div class="contentbox">
-<div id='product-component-1613151919880'></div>
-<div class="shopbox">
+    <div class="contentContainer">
+<div id='product-component-1613172461860'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
@@ -47,7 +46,7 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
         id: '6199297736860',
-        node: document.getElementById('product-component-1613151919880'),
+        node: document.getElementById('product-component-1613172461860'),
         moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -56,9 +55,13 @@
         "@media (min-width: 601px)": {
           "max-width": "calc(25% - 20px)",
           "margin-left": "20px",
-		  "margin-right": "20px",
           "margin-bottom": "50px"
         }
+      },
+      "title": {
+        "font-family": "Lato, sans-serif",
+        "font-size": "20px",
+        "color": "#000000"
       },
       "button": {
         "font-family": "Arial, sans-serif",
@@ -72,6 +75,21 @@
           "background-color": "#000000"
         },
         "border-radius": "17px"
+      },
+      "price": {
+        "font-family": "Lato, sans-serif",
+        "font-size": "19px",
+        "color": "#000000"
+      },
+      "compareAt": {
+        "font-family": "Lato, sans-serif",
+        "font-size": "16.15px",
+        "color": "#000000"
+      },
+      "unitPrice": {
+        "font-family": "Lato, sans-serif",
+        "font-size": "16.15px",
+        "color": "#000000"
       }
     },
     "buttonDestination": "modal",
@@ -80,7 +98,10 @@
     },
     "text": {
       "button": "View product"
-    }
+    },
+    "googleFonts": [
+      "Lato"
+    ]
   },
   "productSet": {
     "styles": {
@@ -206,7 +227,6 @@
   </div>
   </body>
 </html>
-
 <script>
 
 var toggleMenu = document.querySelector(".topnav");
