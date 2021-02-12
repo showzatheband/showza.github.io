@@ -1,3 +1,6 @@
+<IfModule mod_rewrite.c>
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)/$ https://showzatheband.com/shop/$1 [L,R]
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+</IfModule>
