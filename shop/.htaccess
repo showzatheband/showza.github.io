@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
 RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{index.html} !-d
 RewriteRule ^(.*)/$ /$1 [L,R=301]
 
 </IfModule>
