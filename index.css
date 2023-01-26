@@ -1,175 +1,104 @@
-body {
-    height: 100vh;
-    margin: 0;
-}
-body {
-  font-family: Helvetica;
-  color: white;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 30px;
-}
-.topnav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  list-style: none;
-  z-index: 3;
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-.topnav .logo img {
-  border-radius: 100px;
-}
-.topnav button {
-  display: none;
-}
-.topnav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-.topnav li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.topnav a,
-.topnav button {
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  
-  color: white;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 40px;
-}
-.topnav button {
-  border: inherit;
-  background: inherit;
-  cursor:pointer;
-}
-.topnav button:before {
-  content: "» ";
-  margin-right: 0.25em;
-}
-.topnav[data-state="open"] button:before {
-  content: "x ";
-}
-.topnav a:hover,
-.topnav button:hover {
-    background-color: black;
-    border-radius: 100px;
-}
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-.gallery {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  margin: 0;
-  padding: 0;
-}
-.gallery li {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0;
-  -webkit-transition: opacity 2.0s ease-in-out 0.0s;
-  -o-transition: opacity 2.0s ease-in-out 0.0s;
-  transition: opacity 2.0s ease-in-out 0.0s;
-}
-.gallery li:nth-child(1) {
-  background-image: url("https://github.com/showzatheband/showzatheband.github.io/blob/master/assets/images/bg_1.JPG?raw=true");
-}
-.gallery li:nth-child(2) {
-  background-image: url("https://github.com/showzatheband/showzatheband.github.io/blob/master/assets/images/bg_2.JPG?raw=true");
-}
-.gallery li:nth-child(3) {
-  background-image: url("https://github.com/showzatheband/showzatheband.github.io/blob/master/assets/images/bg_3.jpg?raw=true");
-}
-[data-background="1"] .gallery li:nth-child(1),
-[data-background="2"] .gallery li:nth-child(2),
-[data-background="3"] .gallery li:nth-child(3) {
-  opacity: 1;
-}
-.hero {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  background: url("https://raw.githubusercontent.com/showzadomain/showzatheband.github.io/master/assets/images/showza.png") rgba(0,0,0,0.15) center center no-repeat;
-  background-size: 65%;
-}
-.heroContainer {
-  flex: 1;
-  padding-top: 35%;
-}
-.socialItems {
-  width: 50%;
-  height: 100px;
-  color: pink;
-}
-@media screen and (max-width: 1200px) {
-    .topnav {
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      width: 100%;
-    }
-    .topnav button {
-      display: inherit;
-    }
-    .topnav ul {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      position: absolute;
-      top: 100%;
-      right: 0;
-      margin: 0;
-      padding: 0;
-      background-color: #87CFBC;
-      border-radius: 37px;
-    }
-    .topnav ul li {
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end;
-    }
-    .topnav[data-state="closed"] ul {
-      display: none;
-    }
-}
+<html>
+	<head>
+		<title>Showza</title>
+		<link rel="icon" type="image/x-icon" href="ICON">
+		<style>
+			body {
+				background-color: #f4fdfa;
+				}
+			.nav {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				}
+			.left {
+				border: 2px solid #000;
+				align-content:left;
+				text-align: right;
+				}
+			.logo {
+				display: flex;
+				background-color: #f4fdfa;
+				align-items: center;
+				flex-direction: column;
+				border: 2px solid #000;
+				}
+			.right {
+				border: 2px solid #000;
+				align-content: right;
+				text-align:right;
+				flex-direction: column;
+				}
+			.center {
+				display: flex;
+				}
+			.albumart {
+				display: flex;
+				background-color: #f4fdfa;
+				align-items: center;
+				flex-direction: column;
+				font-size: 35px
+				}
+			.socials {
+				display: block;
+				background-color: #f4fdfa;
+				text-align:center;
+				align-items:center;
+				align-content:center;
+				flex-direction: row;
+				}
+			p {
+				margin: 0;
+				font-family: 'Times New Roman', serif;
+				font-size: 35
+			px;
+				}
+			a { text-decoration: none; }
+		</style>
+	</head>
+	<body>
+	<div class="nav">
+		<div class="left">
+		</div>
+		<div class="logo">
+			<a href="https://www.showzatheband.com">
+			<img src="LOGO" width="400vh">
+			</a>
+		</div>
+		<div class="right">
+		<a href="https://www.showzatheband.com/about">
+			<img src="ABOUT" width="20vh">
+			</a>
+			<a href="https://www.showzatheband.com/contact">
+			<img src="CONTACT" width="20vh">
+			</a>
+			<a href="https://www.showzatheband.com/dates">
+			<img src="DATES" width="20vh">
+			</a>
+	</div>
+		<br>	
+	<div class="albumart">
+		<a href="https://open.spotify.com/album/2kPLGwkDv4VsaPy1nUs7vS?si=2XqNe_AyRyeUHd5SrY46mw">
+			<img src="THE DINGER" width="300vh">
+			</a>
+		<p>OUT NOW</P>
+		<a href="https://open.spotify.com/album/2kPLGwkDv4VsaPy1nUs7vS?si=2XqNe_AyRyeUHd5SrY46mw">
+			<img src="LISTEN" width="100vh">
+			</a>
+	</div>
+	<br>
+	<div class="socials">
+		<a href="https://open.spotify.com/artist/2YFh0mdiWJG8g75Ex5nn0t?si=GIKPC2OWSfuj10SX2ND6SQ">
+			<img src="SPOTIFY" width="40vh">
+			</a>
+		<a href="https://music.apple.com/gb/artist/showza/1526963333">
+			<img src="APPLEMUSIC" width="40vh">
+			</a>
+		<a href="https://www.youtube.com/channel/UCuB9DheYQz6MoSWU9Mfgtkg">
+			<img src="YOUTUBE" width="40vh">
+			</a>
+		<a href="https://www.instagram.com/showzatheband/">
+			<img src="INSTAGRAM" width="40vh">
+			</a>
+	</div>
+	</body>
+</html>
