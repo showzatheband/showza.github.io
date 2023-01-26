@@ -1,60 +1,104 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>showzatheband</title>
-    <link rel='icon' href='https://raw.githubusercontent.com/showzatheband/showzatheband.github.io/master/assets/images/showzaicon.png' type='image/x-icon'>
-    <link href="index.css" rel="stylesheet" type="text/css"/>
-  </head>
-  <body data-background="1">
-    <menu class="topnav" data-state="closed">
-      <a href="/" title="Homepage" class="logo"><img src="https://raw.githubusercontent.com/showzatheband/showzatheband.github.io/master/assets/images/showzafavcon.jpg" alt="showza_icon" width="125" height="125" /></a>
-      <button>menu</button>
-      <ul>
-        <li><a href="/dates" class="item">live dates</a></li>
-        <li><a href="/gallery" class="item">gallery</a></li>
-		<li><a href="/shop" class="item">shop</a></li>
-      </ul>
-    </menu>
-    <div class="hero">
-      <div class="heroContainer">
-        
-        <a href="https://open.spotify.com/artist/2YFh0mdiWJG8g75Ex5nn0t"><img src="https://raw.githubusercontent.com/showzatheband/showzatheband.github.io/master/assets/images/spotify.png" width="75" height="75" title="spotify" alt="spotify"></a></td>
-        <a href="https://music.apple.com/gb/artist/showza/1526963333"><img src="https://raw.githubusercontent.com/showzatheband/showzatheband.github.io/master/assets/images/apple.png" width="75" height="75" title="apple music" alt="applemusic"></a></td>        
-        <a href="https://www.youtube.com/channel/UCGOLB3XZjZ1V0qPl_JFT2sA"><img src="https://raw.githubusercontent.com/showzatheband/showzatheband.github.io/master/assets/images/Youtube-512.png" width="75" height="75" title="youtube" alt="youtube"></a></td>
-		<a href="https://twitter.com/ShowzaTheBand"><img src="https://raw.githubusercontent.com/showzatheband/showzatheband.github.io/master/assets/images/twitter.png" width="75" height="75" title="twitter" alt="twitter"></a></td>
-		<a href="https://www.instagram.com/showzatheband/"><img src="https://raw.githubusercontent.com/showzatheband/showzatheband.github.io/master/assets/images/iu.png" width="75" height="75" title="instagram" alt="instagram"></a></td>
-      </div>
-    </div>
-    <ul class="gallery">
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </body>
+<html>
+	<head>
+		<title>Showza</title>
+		<link rel="icon" type="image/x-icon" href="ICON">
+		<style>
+			body {
+				background-color: #f4fdfa;
+				}
+			.nav {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				}
+			.left {
+				border: 2px solid #000;
+				align-content:left;
+				text-align: right;
+				}
+			.logo {
+				display: flex;
+				background-color: #f4fdfa;
+				align-items: center;
+				flex-direction: column;
+				border: 2px solid #000;
+				}
+			.right {
+				border: 2px solid #000;
+				align-content: right;
+				text-align:right;
+				flex-direction: column;
+				}
+			.center {
+				display: flex;
+				}
+			.albumart {
+				display: flex;
+				background-color: #f4fdfa;
+				align-items: center;
+				flex-direction: column;
+				font-size: 35px
+				}
+			.socials {
+				display: block;
+				background-color: #f4fdfa;
+				text-align:center;
+				align-items:center;
+				align-content:center;
+				flex-direction: row;
+				}
+			p {
+				margin: 0;
+				font-family: 'Times New Roman', serif;
+				font-size: 35
+			px;
+				}
+			a { text-decoration: none; }
+		</style>
+	</head>
+	<body>
+	<div class="nav">
+		<div class="left">
+		</div>
+		<div class="logo">
+			<a href="https://www.showzatheband.com">
+			<img src="LOGO" width="400vh">
+			</a>
+		</div>
+		<div class="right">
+		<a href="https://www.showzatheband.com/about">
+			<img src="ABOUT" width="20vh">
+			</a>
+			<a href="https://www.showzatheband.com/contact">
+			<img src="CONTACT" width="20vh">
+			</a>
+			<a href="https://www.showzatheband.com/dates">
+			<img src="DATES" width="20vh">
+			</a>
+	</div>
+		<br>	
+	<div class="albumart">
+		<a href="https://open.spotify.com/album/2kPLGwkDv4VsaPy1nUs7vS?si=2XqNe_AyRyeUHd5SrY46mw">
+			<img src="THE DINGER" width="300vh">
+			</a>
+		<p>OUT NOW</P>
+		<a href="https://open.spotify.com/album/2kPLGwkDv4VsaPy1nUs7vS?si=2XqNe_AyRyeUHd5SrY46mw">
+			<img src="LISTEN" width="100vh">
+			</a>
+	</div>
+	<br>
+	<div class="socials">
+		<a href="https://open.spotify.com/artist/2YFh0mdiWJG8g75Ex5nn0t?si=GIKPC2OWSfuj10SX2ND6SQ">
+			<img src="SPOTIFY" width="40vh">
+			</a>
+		<a href="https://music.apple.com/gb/artist/showza/1526963333">
+			<img src="APPLEMUSIC" width="40vh">
+			</a>
+		<a href="https://www.youtube.com/channel/UCuB9DheYQz6MoSWU9Mfgtkg">
+			<img src="YOUTUBE" width="40vh">
+			</a>
+		<a href="https://www.instagram.com/showzatheband/">
+			<img src="INSTAGRAM" width="40vh">
+			</a>
+	</div>
+	</body>
 </html>
-
-<script>
-
-window.setInterval(function(){
-  var currentBackground = document.body.getAttribute("data-background") * 1,
-      nextBackground = currentBackground + 1;
-  if (currentBackground >= 3) {
-    nextBackground = 1;
-  }
-  document.body.setAttribute("data-background", nextBackground);
-}, 5000);
-// menu controls
-var toggleMenu = document.querySelector(".topnav");
-var toggleMenuButton = toggleMenu.querySelector(" button");
-var toggleMenuState = function (evt) {
-  evt.preventDefault();
-  var currentState = toggleMenu.getAttribute("data-state");
-  if (currentState === "closed") {
-    toggleMenu.setAttribute("data-state", "open");
-  } else {
-    toggleMenu.setAttribute("data-state", "closed");
-  }
-};
-toggleMenuButton.addEventListener("click", toggleMenuState);
-
-</script>
